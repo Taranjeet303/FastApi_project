@@ -9,9 +9,10 @@ class Login_request(BaseModel):
     nationality: Optional[str]=None
 
 users ={
-    1:{"name" : "Taranjeet Kaur","age" : 20},
-    2:{"name" : "Anish","age" : 29},
-    3:{"name" : "Tripti","age" : 17}
+   101:{"name" : "Taranjeet Kaur","age" : 20},
+    102:{"name" : "Anish","age" : 29},
+    103:{"name" : "Tripti","age" : 17},
+    104: {"name" : "kailash", "age": 56}
 }
 @app.get("/")
 def home():
