@@ -66,7 +66,11 @@ class Login_request(BaseModel):
 #             "data": deleted_user
 #         }
 #     return {"error": "User not found"}
-
+@app.post("/")
+def home():
+    return {
+        "message": "hello user!"
+    }
 
 @app.post("/users", response_model=UserResponse)
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
